@@ -33,6 +33,62 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- nav buttons -->
+			<div class="nav-buttons" id="nav-buttons">
+				<div class="container">
+					<ul class="nav-buttons__list">
+						<li class="nav-buttons__item is--active">
+							<a href="#" class="nav-buttons__btn">О форуме</a>
+						</li>
+						<li class="nav-buttons__item">
+							<a href="#" class="nav-buttons__btn">Личный кабинет</a>
+						</li>
+						<li class="nav-buttons__item">
+							<a href="#" class="nav-buttons__btn">Условия участия</a>
+						</li>
+						<li class="nav-buttons__item">
+							<a href="#" class="nav-buttons__btn">Оплата участия</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- end of nav buttons -->
+			<!-- play video -->
+			<div class="play-video" id="play-video">
+				<div class="container">
+					<a href="#" class="play-video__wrapper">
+						<span class="play-video__heading">Как прошел форум «Здоровое общество» - 2023</span>
+						<span class="play-video__text">Смотреть видео</span>
+						<svg class="play-video__icon">
+							<use xlink:href="img/sprite.svg#icon-play"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<!-- end of play video -->
+			<!-- about -->
+			<section class="about" id="about">
+				<div class="container">
+					<div class="about__wrapper">
+						<div class="about__body">
+							<h2 class="about__heading">О форуме</h2>
+							<p class="about__description">Форум «Здоровое общество» - ведущая площадка диалога и эффективных решений, нацеленных на увеличение продолжительности здоровой и активной жизни, укрепление ментального благополучия, формирование благоприятной окружающей среды.</p>
+						</div>
+						<div class="about__list">
+							<ul>
+								<li><span>Главное</span> ежегодное событие экосистемы «Здоровое общество»</li>
+								<li><span>Инновационный форум</span>, объединяющий мир технологий и индустрию здоровья</li>
+								<li>При участии экспертов стран <span>СНГ&nbsp;и&nbsp; БРИКС</span></li>
+								<li><span>Площадка открытого диалога</span> лидеров индустрии здоровья, власти, бизнеса, НКО</li>
+							</ul>
+						</div>
+					</div>
+					<picture class="about__img">
+						<img src="img/about-01.png" alt="Image">
+					</picture>
+				</div>
+			</section>
+			<!-- end of about -->
 			<div class="section-grey">
 				<!-- healthy society forum -->
 				<section class="healthy-society-forum" id="healthy-society-forum">
@@ -71,11 +127,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="healthy-society-forum__item">
+						<a href="#" class="healthy-society-forum__item">
 							<picture class="healthy-society-forum__img">
 								<img src="img/healthy-society-forum-02.jpg" alt="Image">
 							</picture>
-						</div>
+						</a>
 						<div class="healthy-society-forum__item">
 							<picture class="healthy-society-forum__img">
 								<img src="img/healthy-society-forum-03.jpg" alt="Image">
@@ -452,24 +508,29 @@
 					</p>
 				</div>
 				<div class="footer__bottom">
-					<p class="footer__copyright">© 2019-2024 Фонд Росконгресс</p>
-					<div class="c-socnav footer__socnav">
-						<ul class="c-socnav__list">
-							<li class="c-socnav__item">
-								<a href="#" class="c-socnav__link">
-									<svg class="c-socnav__icon">
-										<use xlink:href="img/sprite.svg#icon-tg"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="c-socnav__item">
-								<a href="#" class="c-socnav__link">
-									<svg class="c-socnav__icon">
-										<use xlink:href="img/sprite.svg#icon-vk"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
+					<div class="footer__group">
+						<p class="footer__copyright">© 2019-2024 Фонд Росконгресс</p>
+						<p class="footer__copyright">Разработка сайта: <a href="#">Авилум</a></p>
+					</div>
+					<div class="footer__inner">
+						<div class="c-socnav footer__socnav">
+							<ul class="c-socnav__list">
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-tg"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
