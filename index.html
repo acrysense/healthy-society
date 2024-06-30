@@ -33,7 +33,7 @@
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype.png" alt="Здоровое Общество">
 					</a>
-					<nav class="header__nav nav">
+					<nav class="nav header__nav">
 						<ul class="nav__list">
 							<li class="nav__item">
 								<a href="#" class="nav__link">О проекте</a>
@@ -76,6 +76,14 @@
 								<use xlink:href="img/sprite.svg#icon-user"></use>
 							</svg>
 						</a>
+						<button class="hamburger" id="hamburger-toggle">
+							<span class="hamburger__group">
+								<div class="hamburger__inner"></div>
+								<div class="hamburger__inner"></div>
+								<div class="hamburger__inner"></div>
+							</span>
+							<span class="hamburger__title">Меню</span>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -128,11 +136,13 @@
 							</picture>
 						</div>
 						<div class="main__body">
-							<picture class="main__logotype">
-								<img src="img/logotype-vertical.svg" alt="Image">
-							</picture>
-							<h2 class="main__date">24-25 июля <span>2024</span></h2>
-							<p class="main__address">Москва, Инновационный научно-технологический центр МГУ <br>«Воробьевы горы»,кластер «Ломоносов»</p>
+							<div class="main__body-inner">
+								<picture class="main__logotype">
+									<img src="img/logotype-vertical.svg" alt="Image">
+								</picture>
+								<h2 class="main__date">24-25 июля <span>2024</span></h2>
+								<p class="main__address">Москва, Инновационный научно-технологический центр МГУ <br>«Воробьевы горы»,кластер «Ломоносов»</p>
+							</div>
 							<a href="#" class="main__btn btn btn--green">Регистрация</a>
 						</div>
 					</div>
@@ -624,6 +634,50 @@
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="menu__wrap">
+			<nav class="nav menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">О проекте</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">ФЗО 2024</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Новости</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Мероприятия</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Мультимедия</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="c-socnav menu__socnav">
+				<ul class="c-socnav__list">
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-tg"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-vk"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<span class="menu__copyright">© 2019-2024 Фонд Росконгресс</span>
+		</div>
+	</div>
+	<!-- end of menu -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
