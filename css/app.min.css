@@ -1145,6 +1145,19 @@ svg {
 .nav-buttons {
   margin-top: 20px;
 }
+.nav-buttons__scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 calc(50% - 50vw) -30px;
+  padding: 0 20px 30px;
+  -webkit-clip-path: inset(0 0 30px 0);
+          clip-path: inset(0 0 30px 0);
+}
+@media screen and (max-width: 767px) {
+  .nav-buttons__scroll {
+    padding: 0 10px 30px;
+  }
+}
 .nav-buttons__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1152,17 +1165,16 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
+  max-width: 1156px;
+  width: 100%;
 }
-@media screen and (max-width: 767px) {
-  .nav-buttons__list {
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin: 0 -10px -30px;
-    padding: 0 10px 30px;
-    max-width: calc(100% + 20px);
-    -webkit-clip-path: inset(0 0 30px 0);
-            clip-path: inset(0 0 30px 0);
-  }
+.nav-buttons__list:after {
+  content: "";
+  display: block;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
 }
 .nav-buttons__item.is--active .nav-buttons__btn {
   color: #FFFFFF;
